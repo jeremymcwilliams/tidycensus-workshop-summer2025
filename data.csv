@@ -6,8 +6,6 @@ Adams,2020,57
 Adams,2021,84
 Adams,2022,84
 Adams,2023,99
-Adams,2024,139
-Adams,2025,158
 Asotin,2017,26
 Asotin,2018,54
 Asotin,2019,53
@@ -15,8 +13,6 @@ Asotin,2020,69
 Asotin,2021,71
 Asotin,2022,66
 Asotin,2023,84
-Asotin,2024,108
-Asotin,2025,102
 Benton,2017,119
 Benton,2018,224
 Benton,2019,235
@@ -24,8 +20,6 @@ Benton,2020,245
 Benton,2021,333
 Benton,2022,359
 Benton,2023,481
-Benton,2024,585
-Benton,2025,597
 Chelan,2017,89
 Chelan,2018,196
 Chelan,2019,197
@@ -33,8 +27,6 @@ Chelan,2020,218
 Chelan,2021,284
 Chelan,2022,306
 Chelan,2023,379
-Chelan,2024,503
-Chelan,2025,460
 Clallam,2017,84
 Clallam,2018,190
 Clallam,2019,203
@@ -42,8 +34,6 @@ Clallam,2020,209
 Clallam,2021,244
 Clallam,2022,275
 Clallam,2023,319
-Clallam,2024,404
-Clallam,2025,409
 Clark,2017,113
 Clark,2018,265
 Clark,2019,288
@@ -51,8 +41,6 @@ Clark,2020,333
 Clark,2021,400
 Clark,2022,471
 Clark,2023,660
-Clark,2024,759
-Clark,2025,677
 Columbia,2017,7
 Columbia,2018,21
 Columbia,2019,18
@@ -60,8 +48,6 @@ Columbia,2020,28
 Columbia,2021,35
 Columbia,2022,35
 Columbia,2023,49
-Columbia,2024,42
-Columbia,2025,57
 Cowlitz,2017,69
 Cowlitz,2018,139
 Cowlitz,2019,171
@@ -69,8 +55,6 @@ Cowlitz,2020,157
 Cowlitz,2021,202
 Cowlitz,2022,250
 Cowlitz,2023,305
-Cowlitz,2024,355
-Cowlitz,2025,326
 Douglas,2017,60
 Douglas,2018,117
 Douglas,2019,122
@@ -78,8 +62,6 @@ Douglas,2020,130
 Douglas,2021,175
 Douglas,2022,197
 Douglas,2023,258
-Douglas,2024,317
-Douglas,2025,323
 Ferry,2017,16
 Ferry,2018,39
 Ferry,2019,45
@@ -87,8 +69,6 @@ Ferry,2020,44
 Ferry,2021,46
 Ferry,2022,61
 Ferry,2023,64
-Ferry,2024,88
-Ferry,2025,79
 Franklin,2017,54
 Franklin,2018,136
 Franklin,2019,140
@@ -96,8 +76,6 @@ Franklin,2020,158
 Franklin,2021,208
 Franklin,2022,241
 Franklin,2023,300
-Franklin,2024,387
-Franklin,2025,406
 Garfield,2017,4
 Garfield,2018,7
 Garfield,2019,10
@@ -105,8 +83,6 @@ Garfield,2020,11
 Garfield,2021,10
 Garfield,2022,18
 Garfield,2023,16
-Garfield,2024,12
-Garfield,2025,15
 Grant,2017,89
 Grant,2018,195
 Grant,2019,198
@@ -114,8 +90,6 @@ Grant,2020,236
 Grant,2021,285
 Grant,2022,329
 Grant,2023,411
-Grant,2024,559
-Grant,2025,522
 Grays Harbor,2017,81
 Grays Harbor,2018,184
 Grays Harbor,2019,202
@@ -123,8 +97,6 @@ Grays Harbor,2020,212
 Grays Harbor,2021,280
 Grays Harbor,2022,301
 Grays Harbor,2023,362
-Grays Harbor,2024,454
-Grays Harbor,2025,403
 Island,2017,123
 Island,2018,266
 Island,2019,277
@@ -132,8 +104,6 @@ Island,2020,302
 Island,2021,343
 Island,2022,360
 Island,2023,459
-Island,2024,546
-Island,2025,498
 Jefferson,2017,102
 Jefferson,2018,224
 Jefferson,2019,229
@@ -141,8 +111,6 @@ Jefferson,2020,251
 Jefferson,2021,298
 Jefferson,2022,310
 Jefferson,2023,376
-Jefferson,2024,440
-Jefferson,2025,395
 King,2017,428
 King,2018,925
 King,2019,953
@@ -150,8 +118,6 @@ King,2020,985
 King,2021,1104
 King,2022,1266
 King,2023,1606
-King,2024,1801
-King,2025,1663
 Kitsap,2017,175
 Kitsap,2018,339
 Kitsap,2019,359
@@ -159,8 +125,6 @@ Kitsap,2020,387
 Kitsap,2021,417
 Kitsap,2022,525
 Kitsap,2023,641
-Kitsap,2024,747
-Kitsap,2025,726
 Kittitas,2017,56
 Kittitas,2018,135
 Kittitas,2019,138
@@ -168,8 +132,6 @@ Kittitas,2020,139
 Kittitas,2021,198
 Kittitas,2022,256
 Kittitas,2023,314
-Kittitas,2024,386
-Kittitas,2025,379
 Klickitat,2017,36
 Klickitat,2018,102
 Klickitat,2019,112
@@ -177,8 +139,6 @@ Klickitat,2020,114
 Klickitat,2021,140
 Klickitat,2022,157
 Klickitat,2023,204
-Klickitat,2024,249
-Klickitat,2025,226
 Lewis,2017,108
 Lewis,2018,224
 Lewis,2019,243
@@ -186,8 +146,6 @@ Lewis,2020,235
 Lewis,2021,295
 Lewis,2022,329
 Lewis,2023,378
-Lewis,2024,489
-Lewis,2025,447
 Lincoln,2017,15
 Lincoln,2018,46
 Lincoln,2019,46
@@ -195,8 +153,6 @@ Lincoln,2020,45
 Lincoln,2021,66
 Lincoln,2022,64
 Lincoln,2023,69
-Lincoln,2024,108
-Lincoln,2025,101
 Mason,2017,106
 Mason,2018,226
 Mason,2019,270
@@ -204,8 +160,6 @@ Mason,2020,272
 Mason,2021,305
 Mason,2022,354
 Mason,2023,412
-Mason,2024,482
-Mason,2025,455
 Okanogan,2017,40
 Okanogan,2018,86
 Okanogan,2019,90
@@ -213,8 +167,6 @@ Okanogan,2020,113
 Okanogan,2021,135
 Okanogan,2022,173
 Okanogan,2023,217
-Okanogan,2024,277
-Okanogan,2025,292
 Pacific,2017,33
 Pacific,2018,86
 Pacific,2019,98
@@ -222,8 +174,6 @@ Pacific,2020,93
 Pacific,2021,140
 Pacific,2022,132
 Pacific,2023,177
-Pacific,2024,222
-Pacific,2025,240
 Pend Oreille,2017,23
 Pend Oreille,2018,39
 Pend Oreille,2019,39
@@ -231,8 +181,6 @@ Pend Oreille,2020,43
 Pend Oreille,2021,54
 Pend Oreille,2022,64
 Pend Oreille,2023,89
-Pend Oreille,2024,99
-Pend Oreille,2025,114
 Pierce,2017,254
 Pierce,2018,500
 Pierce,2019,565
@@ -240,8 +188,6 @@ Pierce,2020,591
 Pierce,2021,671
 Pierce,2022,795
 Pierce,2023,1021
-Pierce,2024,1181
-Pierce,2025,1110
 San Juan,2017,91
 San Juan,2018,168
 San Juan,2019,191
@@ -249,8 +195,6 @@ San Juan,2020,221
 San Juan,2021,245
 San Juan,2022,267
 San Juan,2023,306
-San Juan,2024,368
-San Juan,2025,350
 Skagit,2017,112
 Skagit,2018,247
 Skagit,2019,285
@@ -258,8 +202,6 @@ Skagit,2020,300
 Skagit,2021,342
 Skagit,2022,387
 Skagit,2023,445
-Skagit,2024,538
-Skagit,2025,523
 Skamania,2017,38
 Skamania,2018,65
 Skamania,2019,80
@@ -267,8 +209,6 @@ Skamania,2020,84
 Skamania,2021,95
 Skamania,2022,114
 Skamania,2023,135
-Skamania,2024,150
-Skamania,2025,144
 Snohomish,2017,243
 Snohomish,2018,511
 Snohomish,2019,538
@@ -276,8 +216,6 @@ Snohomish,2020,585
 Snohomish,2021,639
 Snohomish,2022,773
 Snohomish,2023,1024
-Snohomish,2024,1134
-Snohomish,2025,1085
 Spokane,2017,136
 Spokane,2018,304
 Spokane,2019,313
@@ -285,8 +223,6 @@ Spokane,2020,344
 Spokane,2021,408
 Spokane,2022,520
 Spokane,2023,624
-Spokane,2024,760
-Spokane,2025,732
 Stevens,2017,40
 Stevens,2018,92
 Stevens,2019,91
@@ -294,8 +230,6 @@ Stevens,2020,108
 Stevens,2021,127
 Stevens,2022,148
 Stevens,2023,184
-Stevens,2024,204
-Stevens,2025,193
 Thurston,2017,215
 Thurston,2018,410
 Thurston,2019,458
@@ -303,8 +237,6 @@ Thurston,2020,473
 Thurston,2021,541
 Thurston,2022,613
 Thurston,2023,778
-Thurston,2024,862
-Thurston,2025,792
 Wahkiakum,2017,11
 Wahkiakum,2018,26
 Wahkiakum,2019,41
@@ -312,8 +244,6 @@ Wahkiakum,2020,40
 Wahkiakum,2021,52
 Wahkiakum,2022,54
 Wahkiakum,2023,83
-Wahkiakum,2024,90
-Wahkiakum,2025,100
 Walla Walla,2017,65
 Walla Walla,2018,134
 Walla Walla,2019,136
@@ -321,8 +251,6 @@ Walla Walla,2020,159
 Walla Walla,2021,192
 Walla Walla,2022,208
 Walla Walla,2023,238
-Walla Walla,2024,303
-Walla Walla,2025,315
 Whatcom,2017,152
 Whatcom,2018,333
 Whatcom,2019,335
@@ -330,8 +258,6 @@ Whatcom,2020,363
 Whatcom,2021,426
 Whatcom,2022,464
 Whatcom,2023,582
-Whatcom,2024,663
-Whatcom,2025,613
 Whitman,2017,43
 Whitman,2018,107
 Whitman,2019,108
@@ -339,8 +265,6 @@ Whitman,2020,111
 Whitman,2021,122
 Whitman,2022,139
 Whitman,2023,189
-Whitman,2024,230
-Whitman,2025,217
 Yakima,2017,98
 Yakima,2018,173
 Yakima,2019,186
@@ -348,5 +272,3 @@ Yakima,2020,212
 Yakima,2021,253
 Yakima,2022,314
 Yakima,2023,381
-Yakima,2024,495
-Yakima,2025,522
