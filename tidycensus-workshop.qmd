@@ -1,0 +1,169 @@
+---
+title: "tidycensus workshop - June 10th 2025"
+format: html
+editor: visual
+---
+
+## *tidycensus* workshop outline
+
+-   What is tidycensus?
+
+-   Census concepts
+
+-   Getting an API key
+
+-   Finding census variables
+
+-   Querying data
+
+-   Example: EV data set, and merging with census data
+
+------------------------------------------------------------------------
+
+## What is tidycensus?
+
+-   **tidycensus** is an R package that lets you:
+
+    -   Query and receive census data in your R environment
+
+    -   Augment that data with geographic information, allowing easy for mapping
+
+-   More in-depth functionality available [here](https://walker-data.com/census-r/){target="_blank"}.
+
+------------------------------------------------------------------------
+
+## Census concepts
+
+-   **Census Data (Decennial)**
+
+    -   Starting in 1790, taken every 10 years
+
+    -   Intended to be a complete enumeration of the US population to assist with *apportionment* (balanced arrangement of Congressional Districts)
+
+    -   Asks a limited set of questions on race, ethnicity, age, sex, and housing tenure
+
+    -   Aims to be precise counts (not estimates)
+
+-   **American Community Survey (formerly Census Long Form)**
+
+    -   Started before 2010 decennial Census
+
+    -   Premier source of detailed demographic information about the US population
+
+    -   Mailed annually to \~3.5% of US households
+
+    -   Two data sets are released:
+
+        -   **1-year ACS** - covers areas of population 65,000 and greater
+
+        -   **5-year ACS** - moving *average* of data over a 5-year period that covers geographies down to the Census block group
+
+    -   Estimates (not precise counts)
+
+    -   Most recent 5-year ACS: 2023
+
+-   **Other Data Products**
+
+    -   [There are many](https://api.census.gov/data.html){target="_blank"}, and won't be covered in this workshop. But if you're serious about pursuing this further, it may be worth a deeper dive.
+
+-   **Enumerations / Geographical Units**
+
+    -   States
+
+    -   Counties
+
+    -   Census Tracts
+
+    -   Block Groups (smallest unit for ACS)
+
+    -   Block (smallest unit for Census)
+
+-   **Requesting Data**
+
+    -   Aggregated census data is publicly available, via these pathways:
+
+        -   From their [website](https://data.census.gov/){target="_blank"}: you search for data, wade through results, and download the data.
+
+        -   File Transfer Protocol (FTP) - you can download data in bulk using a program like Filezilla, and connecting to ftp2.census.gov
+
+        -   Application Programming Interface (API) - make targeted requests, typically with code. Typically you follow their [documentation](https://www.census.gov/data/developers/guidance/api-user-guide.html){target="_blank"} and acquire a key.
+
+    -   The tidycensus package uses the API. As is common with most APIs, we need a key in order to use it.
+
+------------------------------------------------------------------------
+
+## Getting an API key
+
+-   Register for an API key here: <https://api.census.gov/data/key_signup.html>
+
+-   In a few minutes, you should get a message in your inbox with the key, and a link to verify.
+
+Once you receive your API key, open the file `key.R` and insert it as the first argument in the `census_api_key` function.
+
+```         
+
+census_api_key("KEY-GOES-HERE", install = TRUE, overwrite = TRUE)
+```
+
+Now let's load our libraries, and make the key available to our R environment:
+
+```{r}
+
+
+#note: packages are pre-installed
+#if starting from scratch, you would need to run:
+#install.packages("tidycensus")
+#install.packages("tidyverse")
+#install.packages("sf")
+
+
+#load libraries
+library(tidycensus)
+library(tidyverse)
+library(sf)
+
+# register API key
+source("key.R")
+readRenviron("~/.Renviron")
+
+
+```
+
+------------------------------------------------------------------------
+
+## Finding census variables
+
+This is probably the most challenging part, mainly because census data is complex. Where does the data live (decennial or acs), and which variables are in either?
+
+The tidycensus author suggests this strategy: using the [load_variables function](https://walker-data.com/tidycensus/reference/load_variables.html){target="_blank"} to query a given year and data set, and then sift through the variables to determine the ids you need. Here's an example:
+
+```{r}
+#acs5 = "5-year American Community Survey"
+#thanks, chatgpt
+
+vars_2023 <- load_variables(2023, "acs5", cache = TRUE)
+View(vars_2023)
+```
+
+This yields over 28,000 results! So you can then sift through the table, or write code to search it for specific phrases. You can also use chatgpt to ask more [targeted questions](https://chatgpt.com/share/67c603cd-bdfc-8008-ba4d-fe2cb22458ed). Based upon my query to chatgpt, I know that population estimates are available in the B21001 table. So I can use that info to hone in the variables IDs from my last query:
+
+```{r}
+
+#grepl performs a logical text search
+
+b21001_vars <- vars_2023 %>%
+  filter(grepl("^B21001", name))
+
+View(b21001_vars)
+
+```
+
+From analyzing the results, I need to query the following variables:
+
+-   B21001_002 (total veterans)
+
+-   B21001_003 (total non-veterans)
+
+-   B21001_023 (female veterans)
+
+-   B21001_024 (female non-veterans)

@@ -2,7 +2,7 @@
 # - make a template....takes a while to install
 #install.packages("tidyverse")
 #install.packages("tidycensus")
-install.packages("sf")
+#install.packages("sf")
 
 library(tidyverse)
 library(tidycensus)
@@ -119,13 +119,33 @@ mergedAllYears<-mergedAllYears %>%
 #messy line plot:
 
 ggplot(data=mergedAllYears, mapping=aes(x=`Fiscal Year`, y=purchasesPerK, colour = `Residential County`))+
-  geom_line()
+  geom_line()+
+  labs(title="EV/Hybrid Purchases per year by WA County, 2017-2023", x="Year", y="Purchases per thousand residents")
 
+
+#heat map
+ggplot(mergedAllYears, aes(x = `Fiscal Year`, y = fct_reorder(`Residential County`, -purchasesPerK), fill = purchasesPerK)) +
+  geom_tile() +
+  scale_fill_viridis_c() +
+  labs(title = "EV/Hybrid Purchases per 1,000 Residents",
+       x = "Year", y = "County", fill = "Per 1,000")
 
 
 # maybe look at 1 county, with rates for different types of cars
 # Clark county
 
+clark<-waVehicleData %>%
+  filter(`Residential County`=="Clark")
 
+fuel=c("Gasoline", "Electric", "Hybrid", "Diesel")
+
+clrk<-clark %>%
+  filter(`Fuel Type` %in% fuel & `Fiscal Year`<2025) %>%
+  group_by(`Fiscal Year`, `Fuel Type`) %>%
+  summarize(purchases=n())
+
+
+ggplot(data=clrk, mapping=aes(x=`Fiscal Year`, y=purchases, color=`Fuel Type`))+
+  geom_line()
 
 
